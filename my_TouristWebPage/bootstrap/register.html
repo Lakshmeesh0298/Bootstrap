@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="short icon" href="../ass/map.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form  name="regi" class="regis" onsubmit="return formvalidation()" action="">
+        <table>
+            <tr>
+                <td><label for="Fname">Name:</label></td>
+                
+                <td><input type="text" id="Fname" name="name" placeholder="Enter Your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label> </td>
+               
+                <td><input type="email" name="email" id="email" placeholder="enter email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="psw">Password</label> </td>
+           
+            <td><input type="password " id="psw" name="passw" required 
+            pattern="(?=.*\d)(?=.*[A-Z]{2})(?=.*[a-z]{2})(?=.*['!$@?*&,]).{8}"
+            title="must have 1 uppercase and 1 lowercase and 1 digits and 1 special characters"  placeholder="Enter the passward"></td> 
+            </tr>
+            
+            <tr>
+                <td><label for="mobile" >Mobile Number</label></td>
+                
+                <td><input type="tel" id="mobile" name="mobile" placeholder="enter mobile number"
+                     pattern="[6-9]{1}[0-9]{9}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender" >Gender</label></td>
+                <td><input type="radio" id="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="Others"><label for="Others">Others</label>
+                </td>
+        
+            </tr>
+            <tr>
+                <td><label for="">Language</label></td>
+                <td><input list="language" name="fav" required placeholder="select the language">
+                <datalist id="language">
+                    <option value="">Select language</option>
+                    <option value="Telugu">Telugu
+                        
+                    </option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="English">English</option>
+                </datalist></td>
+            </tr>
+           
+                
+                   
+               
+          
+           
+            <tr> 
+                <td colspan="2"><input type="submit" value="Register" class="submit"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="agreement" name="agree1" value="agree1" required>
+                    <label for="agree">I have read User agreement and Policy Terms </label>
+                    
+                
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <p>Already have account?<a href="./index.html">Login</a></p>
+                </td>
+            </tr>
+            
+        </table>
+        
+       
+        
+        
+        </form>
+        <script src="../registerpage/register.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/10/18/02/palace-1086782__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.container h1{
+    color: rgb(22, 20, 20);
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+}
+.regis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+    height: 70vh;
+    color: rgb(10, 9, 8);
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif ;
+    background-color: rgba(58, 143, 136, 0.726);
+    border-radius: 20px 20px 20px 20px;
+    /* opacity: 0.9; */
+    padding: 20px;
+
+}
+.regis input,.regis select,.regis textarea{
+    border: none;
+    padding: 5px;
+    font-family:'Open Sans', sans-serif;
+    margin-top: 10px; 
+}
+.regis input:focus,.regis textarea:focus{
+    box-shadow: 3px 3px 10px rgb(228, 228,228),-3px -3px 10px rgb(224, 224,224);
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 8, 0, 0.973);
+    
+}
+
+.regis .submit{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 15px;
+    color: black;
+    background-color: rgba(255, 208, 0, 0.973);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.regis .submit:hover{
+    box-shadow: 3px 3px 10px white;
+}
+.regis textarea:hover,.regis input:hover
+{
+    box-shadow: 3px 3px 10px coral;
+}
